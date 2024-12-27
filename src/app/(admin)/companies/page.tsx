@@ -3,7 +3,9 @@ import CompanyTable from '@/app/components/company-table';
 import CompanyRow from '@/app/components/company-row';
 import { Status } from '@/app/components/status-label';
 
-export interface PageProps {}
+export interface PageProps {
+  children: React.ReactNode;
+}
 
 export default function Page({}: PageProps) {
   return (
