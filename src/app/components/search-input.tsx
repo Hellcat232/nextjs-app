@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 export interface SearchInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {

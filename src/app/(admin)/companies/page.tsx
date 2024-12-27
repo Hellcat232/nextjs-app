@@ -1,10 +1,11 @@
-import React from 'react';
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 import { getCompanies } from '@/lib/api';
 import getQueryClient from '@/lib/utils/getQueryClient';
 import CompanyTable from '@/app/components/company-table';
 
-export interface PageProps {}
+export interface PageProps {
+  children: React.ReactNode;
+}
 
 export default async function Page({}: PageProps) {
   const queryClient = getQueryClient();
