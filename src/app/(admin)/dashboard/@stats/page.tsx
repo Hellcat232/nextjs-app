@@ -1,5 +1,6 @@
 import { getSummaryStats, SummaryStats } from '@/lib/api';
-import StatCard, { StatCardType } from '@/app/components/stat-card';
+import StatCard from '@/app/components/stat-card/stat-card';
+import StatCardType from '@/app/components/stat-card';
 
 export interface PageProps {
   children: React.ReactNode;
