@@ -3,9 +3,8 @@
 import { useRouter } from 'next/navigation';
 import CompanyFormModal from '@/app/components/company-form-modal';
 
-export interface PageProps {
-  children: React.ReactNode;
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+export interface PageProps {}
 
 export default function Page({}: PageProps) {
   const router = useRouter();

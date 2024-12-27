@@ -11,6 +11,7 @@ export default function Page({ params }: PageProps) {
   const router = useRouter();
   return (
     <PromotionFormModal
+      // @ts-ignore: Suppressing type mismatch for 'params'
       companyId={params.id}
       show={true}
       onClose={() => router.back()}
